@@ -1,2 +1,5 @@
-.gradle/
-.idea/
+/.gradle/
+/.idea/
+/build/
+/out/
+/samples-junit5.iml
