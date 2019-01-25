@@ -14,6 +14,8 @@ repositories {
 dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnitJupiterVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jUnitJupiterVersion"
+    
+    testCompile "org.junit.platform:junit-platform-runner:$jUnitPlatformVersion"
 }
 
 wrapper {
