@@ -12,9 +12,14 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnitJupiterVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jUnitJupiterVersion"
 }
 
 wrapper {
     gradleVersion = '5.1.1'
+}
+
+test {
+    useJUnitPlatform()
 }
