@@ -12,13 +12,15 @@ repositories {
 }
 
 dependencies {
-    testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnitJupiterVersion"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jUnitJupiterVersion"
+    implementation platform("org.junit:junit-bom:$jUnitVersion")
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
 
     testCompileOnly "junit:junit:4.12"
-    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:$jUnitJupiterVersion"
+    testRuntimeOnly "org.junit.vintage:junit-vintage-engine"
     
-    testCompile "org.junit.platform:junit-platform-runner:$jUnitPlatformVersion"
+    testCompile "org.junit.platform:junit-platform-runner"
 }
 
 wrapper {
