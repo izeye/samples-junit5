@@ -14,8 +14,9 @@ repositories {
 dependencies {
     implementation platform("org.junit:junit-bom:$jUnitVersion")
 
-    testImplementation "org.junit.jupiter:junit-jupiter-api"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
+//    testImplementation "org.junit.jupiter:junit-jupiter-api"
+//    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
+    testImplementation "org.junit.jupiter:junit-jupiter"
 
     testCompileOnly "junit:junit:4.12"
     testRuntimeOnly "org.junit.vintage:junit-vintage-engine"
