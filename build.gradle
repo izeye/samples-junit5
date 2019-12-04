@@ -22,6 +22,7 @@ dependencies {
     testRuntimeOnly "org.junit.vintage:junit-vintage-engine"
     
     testCompile "org.junit.platform:junit-platform-runner"
+    testCompile "io.github.artsok:rerunner-jupiter:2.1.3"
 }
 
 wrapper {
